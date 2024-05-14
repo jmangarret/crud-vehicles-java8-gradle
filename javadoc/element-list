@@ -1,0 +1,5 @@
+com.example.vehicles
+com.example.vehicles.controller
+com.example.vehicles.domain
+com.example.vehicles.repository
+com.example.vehicles.service

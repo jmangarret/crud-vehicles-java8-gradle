@@ -1,0 +1,8 @@
+CREATE TABLE vehicle (
+id BIGINT PRIMARY KEY AUTO_INCREMENT,
+brand VARCHAR(255),
+model VARCHAR(255),
+license VARCHAR(255),
+color VARCHAR(255),
+release_year INT
+);

@@ -26,8 +26,8 @@ dependencies {
 	testImplementation 'org.junit.vintage:junit-vintage-engine'
 	testImplementation 'junit:junit'
 	testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.7.0'
+	implementation 'org.postgresql:postgresql:42.6.0'
 }
-
 test {
 	useJUnitPlatform()
 }

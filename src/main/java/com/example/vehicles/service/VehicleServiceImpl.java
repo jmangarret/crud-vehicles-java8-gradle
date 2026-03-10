@@ -26,6 +26,17 @@ public class VehicleServiceImpl implements VehicleService{
         }
     }
 
+    public Vehicle update(Integer id, Vehicle vehicleDetails) {
+
+        Vehicle vehicle = vehicleDao.findById(id).orElseThrow(() -> new RuntimeException("Vehicle not found"));
+        vehicle.setBrand(vehicleDetails.getBrand());
+        vehicle.setModel(vehicleDetails.getModel());
+        vehicle.setReleaseYear(vehicleDetails.getReleaseYear());
+        // Actualiza los demás campos necesarios
+        return vehicleDao.save(vehicle);
+
+    }
+
     @Override
     public List<Vehicle> findAll() {
         return vehicleDao.findAll();

@@ -7,6 +7,7 @@ import java.util.Optional;
 
 public interface VehicleService {
     Vehicle saveOrUpdate(Vehicle vehicle) throws Exception;
+    Vehicle update(Integer id, Vehicle vehicle) throws Exception;
 
     List<Vehicle> findAll();
 

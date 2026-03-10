@@ -7,7 +7,10 @@
 </head>
 <body class="container">
     <h1>Editar Vehiculo</h1>
-    <form th:action="@{/save}" th:object="${veh}" method="post">
+    <form th:action="@{/update}" th:object="${veh}" method="post">
+        <input type="hidden" th:field="*{id}" />
+        <input type="hidden" name="_method" value="put"/>
+
         <div class="row">
             <div class="form-group col-md-8">
                 <label for="brand" class="col-form-label">Marca</label>

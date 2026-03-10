@@ -79,12 +79,12 @@ public class Vehicle implements Serializable {
     @Override
     public String toString() {
         return "Vehicle{" +
-                "id=" + id.toString() +
+                "id=" + id +
                 ", brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", license='" + license + '\'' +
                 ", color='" + color + '\'' +
-                ", releaseYear='" + releaseYear.toString() + '\'' +
+                ", releaseYear='" + releaseYear + '\'' +
                 '}';
     }
 }

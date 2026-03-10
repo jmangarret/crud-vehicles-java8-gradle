@@ -27,7 +27,7 @@ public class VehicleDaoTest {
 
     @Test
     public void whenFindByCriteria_thenReturnVehicle() {
-        Vehicle veh = new Vehicle(1, "Marca 1", "Model 1", "Matricula 1", "Blanco", 2020);
+        Vehicle veh = new Vehicle(null, "Marca 1", "Model 1", "Matricula 1", "Blanco", 2020);
         em.persist(veh);
         em.flush();
 

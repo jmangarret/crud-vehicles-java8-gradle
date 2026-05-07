@@ -55,7 +55,7 @@ public class VehicleController {
             return "edit";
         }
 
-        return "index";
+        return "index"; //NOSONAR - dead code: @PathVariable Optional<Integer> is always present in Spring MVC 5.x
     }
 
     @PostMapping("/update")
@@ -82,7 +82,7 @@ public class VehicleController {
             return "confirm";
         }
 
-        return "index";
+        return "index"; //NOSONAR - dead code: @PathVariable Optional<Integer> is always present in Spring MVC 5.x
     }
 
     @PostMapping("/delete")

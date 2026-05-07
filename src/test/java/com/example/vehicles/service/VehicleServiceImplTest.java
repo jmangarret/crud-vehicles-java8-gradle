@@ -128,6 +128,15 @@ class VehicleServiceImplTest {
         assertThat(result).isEmpty();
     }
 
+    @Test
+    void findById_shouldReturnEmpty_whenDaoThrowsException() {
+        when(vehicleDao.findById(99)).thenThrow(new RuntimeException("DB error"));
+
+        Optional<Vehicle> result = vehicleService.findById(99);
+
+        assertThat(result).isEmpty();
+    }
+
     // --- delete ---
 
     @Test
